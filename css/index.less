@@ -1,0 +1,405 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+
+
+
+.wjs_top {
+    height: 40px;
+    text-align: center;
+    // padding: 10px 0;
+    // line-height: 40px;
+    .col-lg-2 {
+    // padding: 10px 0;
+    
+        .wjs_download {
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+            height: 40px;
+            line-height: 40px;
+            
+            a {
+                position: relative;
+                // display: block;
+                span{
+                    font-size: 14px;
+                    color: #808080;
+                }
+                &:hover {
+                    .codehidden {
+                        display:block;
+                    }
+                }
+                .codehidden {
+                    display: none;
+                    position: absolute;
+                    top: 16px;
+                    left: 0px;
+                    z-index: 10;
+                    
+                }
+            }
+            
+        }
+    }
+    .col-lg-5 {
+        padding:0;
+        
+        .wjs_callme {
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+            padding: 10px 0;
+            height: 40px;
+            a {
+                font-size: 14px;
+                    color: #808080;
+            }
+        
+        }
+    }
+    .col-lg-2 {
+        padding:0;
+        .wjs_help {
+            line-height: 40px;
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+            height: 40px;
+            a {
+                font-size: 14px;
+                color: #808080;
+            }
+            
+        }            
+    }
+    .col-lg-3 {
+        padding:0;
+        .wjs_login {
+            line-height: 35px;
+            
+            height: 40px;
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+            .freecreate {
+                color: #fff;
+                background-color: #d9534f;
+                border-color: #d9534f;
+                
+            }
+            a {
+                font-size: 14px;
+                color: #808080;
+                vertical-align: middle;
+            }
+        }
+    }
+    
+    // navbar navbar-default nav_title
+}
+/*.wjs_nav {
+    background-color: #f8f8f8;
+    .nav_title {
+        margin: 0;
+        border:none;
+        .container-fluid {
+            .navbar-header {
+                .wjs_logo {
+                    padding: 0 10px;
+                    font-size: 70px;  
+                    line-height: 80px;  
+                    &:nth-child(1) {
+                        color: red;
+                    }
+                    
+                }
+            }
+            .collapse {
+                .wjs_nav_left {
+                    li {
+                        a {
+                            line-height: 55px;
+                            color: #808080;    
+                            font-size: 14px;                               
+                            &:hover {
+                                border-bottom: 1px solid red;
+                            }
+                        }
+                    }
+                }
+                .wjs_nav_right {
+                    li {
+                        a{
+                            line-height: 55px;
+                            color: #808080;    
+                            font-size: 14px;
+                            &:hover {
+                                border-bottom: 1px solid red;
+                            }   
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+        
+      
+    }
+    
+}*/
+.wjs_nav {
+        background-color: #f8f8f8;
+      
+        
+        .container_no-padding {
+            padding: 0;
+            .navbar {
+                border:none;
+                margin: 0;
+                .container-fluid {
+                    a {
+                        font-size: 14px;
+                        box-sizing: border-box;
+                        border-bottom: 1px solid #f8f8f8;
+                        height: 80px;
+                        line-height: 80px;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        &:hover {
+                            border-bottom: 1px red solid;
+                        }
+                    }
+                    .navbar-header {
+                        .navbar-brand {
+                            height: 100%;
+                            border-bottom: 1px solid #f8f8f8;
+                            box-sizing: border-box;
+                            
+                            &:hover {
+                                    border-bottom: 1px red solid;
+                            }
+                            span.wjs_logo {
+                                // line-height: 80px;
+                                margin: 0 0px;
+                                padding: 0;
+                                font-size: 60px;
+                                
+                                vertical-align: middle;
+                                &:nth-child(1){
+                                    color: red;
+                                }
+                                
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+}
+.wjs_runningpic {
+    margin-bottom: 100px;
+}
+
+.sixParts {
+    .firstPart {
+        padding-bottom: 60px;
+        a {
+            padding: 10px 0;
+            display: block;
+            float: left;
+            color: #333;
+            &:hover {
+                color: red;
+                // font-weight: 700;
+            }
+            span.wjsfont {
+                font-size: 40px;
+                float: left;
+                margin: 10px;
+            }
+            .wenzi {
+                float: left;
+                h4 {
+                    font-size: 20px;
+                }
+            }
+            
+        }
+    }
+}
+
+.waiting {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    // line-height: 80px;
+    // height: 80px;
+    padding: 30px 0;
+    font-size: 14px;
+    .book_now {
+        border-bottom: 1px red dashed;
+        color: red; 
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:992px) {
+    .sixParts {
+        .firstPart {
+            a {
+                width: 50%;
+            }
+        }
+    }
+}
+.tab-content {
+        margin: 20px 0;
+            .wjs_ticket {
+                display: block;
+                margin: 20px 0;
+                // padding: 20px 0 10px 5px;
+                width: 100%;
+                color: #808080;
+                text-align: center;
+                border: 1px solid #333;
+                box-shadow: 1px 1px 1px 2px #cccccc, -1px -1px 1px 2px #cccccc;
+                .wjs_ticket_left {
+                    padding: 25px 5px 0px;
+                    width: 80%;
+                    color: inherit;
+                    border-right: 1px dashed #333;
+                    h4 {
+                        font-size: 20px;
+                        color: inherit;
+                        margin-bottom: 5px;
+                        // text-decoration-color: #333;
+                    }
+                    div {
+                        color: #808080;
+                        line-height: 26px;
+                        .progress {
+                            width: 50%;
+                            .progress-bar {
+                                color: #fff;
+                                line-height: 20px;
+                            }
+                            
+                        }
+                    }
+                }
+                .wjs_ticket_right {
+                    padding: 63px 0;
+                    width: 20%;
+                    div {
+                        margin: 5px 0;
+                    }
+                    .topradiu {
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        transform: translate(-50%,-50%);
+                    }
+                    .bottomradiu {
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        left:0;
+                        bottom:0;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        transform: translate(-50%,50%);
+                    
+                    }
+                }
+                .special {
+                    font-size: 20px;
+                    padding: 80px 0 28px;
+                    .bao {
+                        position: absolute;
+                        font-size: 14px;
+                        color: green;
+                        border: 1px solid green;
+                        top: 60px;
+                        left: 18px;
+
+                    }
+                    .bei {
+                        position: absolute;
+                        font-size: 14px;
+                        color: orange;
+                        border: 1px solid orange;
+                        top: 60px;
+                        right: 18px;
+                    }
+                }
+            }
+            .red_ticket {
+                background-color: red;
+                color: #fff;
+                span {
+                    color: #fff;
+                }
+                span.wjsfont-e915 {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-size: 40px;
+                }
+            }
+}
+

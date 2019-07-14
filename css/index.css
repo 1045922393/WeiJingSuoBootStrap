@@ -1,0 +1,350 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+.wjs_top {
+  height: 40px;
+  text-align: center;
+}
+.wjs_top .col-lg-2 .wjs_download {
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  height: 40px;
+  line-height: 40px;
+}
+.wjs_top .col-lg-2 .wjs_download a {
+  position: relative;
+}
+.wjs_top .col-lg-2 .wjs_download a span {
+  font-size: 14px;
+  color: #808080;
+}
+.wjs_top .col-lg-2 .wjs_download a:hover .codehidden {
+  display: block;
+}
+.wjs_top .col-lg-2 .wjs_download a .codehidden {
+  display: none;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  z-index: 10;
+}
+.wjs_top .col-lg-5 {
+  padding: 0;
+}
+.wjs_top .col-lg-5 .wjs_callme {
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+  height: 40px;
+}
+.wjs_top .col-lg-5 .wjs_callme a {
+  font-size: 14px;
+  color: #808080;
+}
+.wjs_top .col-lg-2 {
+  padding: 0;
+}
+.wjs_top .col-lg-2 .wjs_help {
+  line-height: 40px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  height: 40px;
+}
+.wjs_top .col-lg-2 .wjs_help a {
+  font-size: 14px;
+  color: #808080;
+}
+.wjs_top .col-lg-3 {
+  padding: 0;
+}
+.wjs_top .col-lg-3 .wjs_login {
+  line-height: 35px;
+  height: 40px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.wjs_top .col-lg-3 .wjs_login .freecreate {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.wjs_top .col-lg-3 .wjs_login a {
+  font-size: 14px;
+  color: #808080;
+  vertical-align: middle;
+}
+/*.wjs_nav {
+    background-color: #f8f8f8;
+    .nav_title {
+        margin: 0;
+        border:none;
+        .container-fluid {
+            .navbar-header {
+                .wjs_logo {
+                    padding: 0 10px;
+                    font-size: 70px;  
+                    line-height: 80px;  
+                    &:nth-child(1) {
+                        color: red;
+                    }
+                    
+                }
+            }
+            .collapse {
+                .wjs_nav_left {
+                    li {
+                        a {
+                            line-height: 55px;
+                            color: #808080;    
+                            font-size: 14px;                               
+                            &:hover {
+                                border-bottom: 1px solid red;
+                            }
+                        }
+                    }
+                }
+                .wjs_nav_right {
+                    li {
+                        a{
+                            line-height: 55px;
+                            color: #808080;    
+                            font-size: 14px;
+                            &:hover {
+                                border-bottom: 1px solid red;
+                            }   
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+        
+      
+    }
+    
+}*/
+.wjs_nav {
+  background-color: #f8f8f8;
+}
+.wjs_nav .container_no-padding {
+  padding: 0;
+}
+.wjs_nav .container_no-padding .navbar {
+  border: none;
+  margin: 0;
+}
+.wjs_nav .container_no-padding .navbar .container-fluid a {
+  font-size: 14px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f8f8f8;
+  height: 80px;
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.wjs_nav .container_no-padding .navbar .container-fluid a:hover {
+  border-bottom: 1px red solid;
+}
+.wjs_nav .container_no-padding .navbar .container-fluid .navbar-header .navbar-brand {
+  height: 100%;
+  border-bottom: 1px solid #f8f8f8;
+  box-sizing: border-box;
+}
+.wjs_nav .container_no-padding .navbar .container-fluid .navbar-header .navbar-brand:hover {
+  border-bottom: 1px red solid;
+}
+.wjs_nav .container_no-padding .navbar .container-fluid .navbar-header .navbar-brand span.wjs_logo {
+  margin: 0 0px;
+  padding: 0;
+  font-size: 60px;
+  vertical-align: middle;
+}
+.wjs_nav .container_no-padding .navbar .container-fluid .navbar-header .navbar-brand span.wjs_logo:nth-child(1) {
+  color: red;
+}
+.wjs_runningpic {
+  margin-bottom: 100px;
+}
+.sixParts .firstPart {
+  padding-bottom: 60px;
+}
+.sixParts .firstPart a {
+  padding: 10px 0;
+  display: block;
+  float: left;
+  color: #333;
+}
+.sixParts .firstPart a:hover {
+  color: red;
+}
+.sixParts .firstPart a span.wjsfont {
+  font-size: 40px;
+  float: left;
+  margin: 10px;
+}
+.sixParts .firstPart a .wenzi {
+  float: left;
+}
+.sixParts .firstPart a .wenzi h4 {
+  font-size: 20px;
+}
+.waiting {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 30px 0;
+  font-size: 14px;
+}
+.waiting .book_now {
+  border-bottom: 1px red dashed;
+  color: red;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .sixParts .firstPart a {
+    width: 50%;
+  }
+}
+.tab-content {
+  margin: 20px 0;
+}
+.tab-content .wjs_ticket {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  color: #808080;
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 1px 1px 1px 2px #cccccc, -1px -1px 1px 2px #cccccc;
+}
+.tab-content .wjs_ticket .wjs_ticket_left {
+  padding: 25px 5px 0px;
+  width: 80%;
+  color: inherit;
+  border-right: 1px dashed #333;
+}
+.tab-content .wjs_ticket .wjs_ticket_left h4 {
+  font-size: 20px;
+  color: inherit;
+  margin-bottom: 5px;
+}
+.tab-content .wjs_ticket .wjs_ticket_left div {
+  color: #808080;
+  line-height: 26px;
+}
+.tab-content .wjs_ticket .wjs_ticket_left div .progress {
+  width: 50%;
+}
+.tab-content .wjs_ticket .wjs_ticket_left div .progress .progress-bar {
+  color: #fff;
+  line-height: 20px;
+}
+.tab-content .wjs_ticket .wjs_ticket_right {
+  padding: 63px 0;
+  width: 20%;
+}
+.tab-content .wjs_ticket .wjs_ticket_right div {
+  margin: 5px 0;
+}
+.tab-content .wjs_ticket .wjs_ticket_right .topradiu {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+.tab-content .wjs_ticket .wjs_ticket_right .bottomradiu {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, 50%);
+}
+.tab-content .wjs_ticket .special {
+  font-size: 20px;
+  padding: 80px 0 28px;
+}
+.tab-content .wjs_ticket .special .bao {
+  position: absolute;
+  font-size: 14px;
+  color: green;
+  border: 1px solid green;
+  top: 60px;
+  left: 18px;
+}
+.tab-content .wjs_ticket .special .bei {
+  position: absolute;
+  font-size: 14px;
+  color: orange;
+  border: 1px solid orange;
+  top: 60px;
+  right: 18px;
+}
+.tab-content .red_ticket {
+  background-color: red;
+  color: #fff;
+}
+.tab-content .red_ticket span {
+  color: #fff;
+}
+.tab-content .red_ticket span.wjsfont-e915 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+}
